@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH --account BIOENG-455
+#SBATCH --reservation bioeng-455
+#SBATCH --job-name="charge"
+#SBATCH --qos=normal
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-core 1
+#SBATCH --ntasks=1
+#SBATCH --mem-per-cpu 1024
+#SBATCH --time 24:00:00
+#SBATCH --output out-%J.txt
+#SBATCH --error err-%J.txt
+#SBATCH --mail-type=END
+#SBATCH --mail-user=alexia.dormann@epfl.ch
+
+
+ ../odpd-fidis  051&
+ ../odpd-fidis  081&
+ ../odpd-fidis  121&
+wait

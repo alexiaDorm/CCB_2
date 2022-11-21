@@ -1,0 +1,64 @@
+dpd
+
+Title	" Water/surfactant "
+Date	2/7/01
+Comment	" Default test run of 2057h "
+
+State   lamella
+        Polymer          Lipid
+        Normal           0  0  1
+        Centre           0.5
+        Thickness        5
+        Linearise        1
+        UpperFraction    0.5
+        Polymerise       0
+
+Bead	H
+    	0.5
+    	25	
+    	4.5	
+
+Bead	A
+    	0.5
+    	25	25	
+    	4.5	4.5	
+
+Bead	B
+    	0.5
+    	50	50	25	
+    	9	9	4.5	
+
+Bead	T
+    	0.5
+    	50	50	25	25	
+    	9	9	4.5	4.5	
+
+Bead	W
+    	0.5
+    	35	35	75	75	25	
+    	4.5	4.5	20	20	4.5	
+
+Bond	H T	128 0.5
+Bond	T T	128 0.5
+
+BondPair    H T T    10 0
+BondPair    T T T    10 0
+
+Polymer	Water 0.957628 "  (W)  "
+Polymer	Lipid 0.042372 "  (H T T T T T T)  "
+
+Box			32 32 32			1 1 1
+Density		3
+Temp		1
+RNGSeed		-60112
+Lambda		0.5
+Step		0.02
+Time		100
+SamplePeriod		10
+AnalysisPeriod		100
+DensityPeriod		100
+DisplayPeriod		100
+RestartPeriod		100
+Grid		10 10 10
+
+Command SetCurrentStateDefaultFormat  1    Paraview

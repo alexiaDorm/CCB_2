@@ -2,7 +2,7 @@
 
 #SBATCH --account BIOENG-455
 #SBATCH --reservation bioeng-455
-#SBATCH --job-name="my-job-name"
+#SBATCH --job-name="normal"
 #SBATCH --qos=normal
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-core 1
@@ -11,7 +11,9 @@
 #SBATCH --time 24:00:00
 #SBATCH --output out-%J.txt
 #SBATCH --error err-%J.txt
+#SBATCH --mail-type=END
+#SBATCH --mail-user=alexia.dormann@epfl.ch
 
 
- odpd-fidis  001&
+ ../odpd-fidis  001&
 wait
