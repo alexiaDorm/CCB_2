@@ -9,11 +9,11 @@
 #SBATCH --ntasks=1
 #SBATCH --mem-per-cpu 1024
 #SBATCH --time 24:00:00
-#SBATCH --output out-%J.txt
-#SBATCH --error err-%J.txt
+#SBATCH --output out.txt
+#SBATCH --error err.txt
 #SBATCH --mail-type=END
 #SBATCH --mail-user=alexia.dormann@epfl.ch
 
 
- ../odpd-fidis  001&
+odpd-fidis  001&
 wait
