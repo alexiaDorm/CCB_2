@@ -15,5 +15,5 @@
 #SBATCH --mail-user=alexia.dormann@epfl.ch
 
 
-odpd-fidis  003 &
+odpd-fidis  003&
 wait
