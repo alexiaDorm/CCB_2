@@ -48,30 +48,22 @@ Polymer  Lipid  0.01513   " (PO4 (* (COH T T T T)) COH T T T) "
 Box       32 32 32       1  1  1
 Density     3
 Temp        1
-RNGSeed	 -5576
+RNGSeed	-5576
 Lambda		0.5
 Step		0.005
 Time            10000
-SamplePeriod    5000
+SamplePeriod    100
 AnalysisPeriod  1000
 DensityPeriod   10000
-DisplayPeriod   500
+DisplayPeriod   100
 RestartPeriod   10000
 Grid		10 10 256
 
-Analysis
-	Type	bilayer
-	Times	0 3000
-	Polymer Lipid
-	Normal	0 0 1
-	Slice	256
-	Grid	16 16
-	Solvent	Water
 
 Command ToggleBeadDisplay              1    W
 Command SetCurrentStateCamera          1    0.5 -0.5 -0.5  0.5 0.5 0.5
 Command SetCurrentStateDefaultFormat  1    Paraview
 
 Command SetTimeStepSize     100    0.02
-Command ChargeBeadByType    5000   1 2 3.6
+Command ChargeBeadByType 5000 1 2 3.6
 
