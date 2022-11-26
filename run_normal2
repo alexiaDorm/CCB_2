@@ -6,7 +6,7 @@
 #SBATCH --qos=normal
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-core 1
-#SBATCH --ntasks=2
+#SBATCH --ntasks=4
 #SBATCH --mem-per-cpu 1024
 #SBATCH --time 24:00:00
 #SBATCH --output out.txt
@@ -14,6 +14,8 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=alexia.dormann@epfl.ch
 
-  ./odpd-fidis  sim4&
   ./odpd-fidis  sim5&
+  ./odpd-fidis  sim6&
+  ./odpd-fidis  sim7&
+  ./odpd-fidis  sim8&
 wait

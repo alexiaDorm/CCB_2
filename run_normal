@@ -17,4 +17,5 @@
   ./odpd-fidis  sim1&
   ./odpd-fidis  sim2&
   ./odpd-fidis  sim3&
+  ./odpd-fidis  sim4&
 wait

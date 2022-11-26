@@ -65,5 +65,5 @@ Command SetCurrentStateCamera          1    0.5 -0.5 -0.5  0.5 0.5 0.5
 Command SetCurrentStateDefaultFormat  1    Paraview
 
 Command SetTimeStepSize     100    0.02
-Command ChargeBeadByType 5000 1 2 2.4
+Command ChargeBeadByType 5000 1 1.5 2.2
 
