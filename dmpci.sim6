@@ -48,7 +48,7 @@ Polymer  Lipid  0.01513   " (PO4 (* (COH T T T T)) COH T T T) "
 Box       32 32 32       1  1  1
 Density     3
 Temp        1
-RNGSeed	-5576
+RNGSeed	 -5576
 Lambda		0.5
 Step		0.005
 Time            10000
