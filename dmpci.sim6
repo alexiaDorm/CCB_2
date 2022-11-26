@@ -59,7 +59,14 @@ DisplayPeriod   500
 RestartPeriod   10000
 Grid		10 10 256
 
-
+Analysis
+	Type	bilayer
+	Times	0 3000
+	Polymer Lipid
+	Normal	0 0 1
+	Slice	256
+	Grid	16 16
+	Solvent	Water
 
 Command ToggleBeadDisplay              1    W
 Command SetCurrentStateCamera          1    0.5 -0.5 -0.5  0.5 0.5 0.5
