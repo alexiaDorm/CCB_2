@@ -14,7 +14,7 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=alexia.dormann@epfl.ch
 
-  ./odpd-fidis  SIM1&
-  ./odpd-fidis  SIM2&
-  ./odpd-fidis  SIM3&
+  ./odpd-fidis  SIM4&
+  ./odpd-fidis  SIM5&
+  ./odpd-fidis  SIM6&
 wait
