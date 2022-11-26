@@ -2,7 +2,7 @@
 
 #SBATCH --account BIOENG-455
 #SBATCH --reservation bioeng-455
-#SBATCH --job-name="normal"
+#SBATCH --job-name="normal2"
 #SBATCH --qos=normal
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-core 1
