@@ -1,0 +1,82 @@
+ dpd
+
+Title	" Flattened vesicle formation wit LLPS  "
+Date	19/04/22
+Comment	" H2T5 lipids and B8 IDPs   "
+
+State	freelamella
+     Polymers        Lipid 
+     Normal          0 0 1
+     Centre          0.5  0.5  0.5
+     Thickness       5.0
+     Length          30.0
+     Width           30.0
+     Linearise       1 
+     UpperFraction   0.5
+     Patches         0 0 
+     Polymerise      0
+
+Bead	HA
+        0.5
+        25
+    	4.5	
+
+Bead	TA
+        0.5
+    	95   25	
+    	4.5  4.5	
+
+Bead	HB
+        0.5
+        40   95   25
+        4.5  4.5  4.5
+
+Bead	TB
+        0.5
+        95   40   95   25
+        4.5  4.5  4.5  4.5
+
+Bead	W
+        0.5
+        25   95   25   95   25
+        4.5  4.5  4.5  4.5  4.5
+        
+Bond    HA HA  128	0.5
+Bond    HA TA  128	0.5
+Bond    TA TA  128	0.5
+Bond    HB HB  128	0.5
+Bond    HB TB  128	0.5
+Bond    TB TB  128	0.5
+
+BondPair  HA HA TA  5.0	0.0
+BondPair  HA TA TA  5.0	0.0
+BondPair  TA TA TA  5.0	0.0
+BondPair  HB HB TB  5.0	0.0
+BondPair  HB TB TB  5.0	0.0
+BondPair  TB TB TB  5.0	0.0
+
+Polymer    Water    0.9893281   " (W) "
+Polymer    Lipid    0.0096719   " (HB HB TB TB TB TB TB) "
+
+Box              50 50 50    1 1 1
+Density          3
+Temp             1
+RNGSeed          -4567
+Lambda            0.5
+Step              0.005
+Time              100000
+SamplePeriod      1000
+AnalysisPeriod    50000
+DensityPeriod     100000
+DisplayPeriod     1000
+RestartPeriod     100000
+Grid		1 1 1
+
+
+Command ToggleBeadDisplay          1    W
+Command SetCurrentStateCamera      1    0.5 -1.0 -0.5  0.5 0.5 0.5
+Command SetCurrentStateDefaultFormat  1    Paraview
+
+Command SetTimeStepSize            1000  0.02
+
+

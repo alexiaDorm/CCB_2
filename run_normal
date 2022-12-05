@@ -2,19 +2,19 @@
 
 #SBATCH --account BIOENG-455
 #SBATCH --reservation bioeng-455
-#SBATCH --job-name="normal"
+#SBATCH --job-name="test"
 #SBATCH --qos=normal
 #SBATCH --nodes 1
 #SBATCH --ntasks-per-core 1
-#SBATCH --ntasks=3
+#SBATCH --ntasks=2
 #SBATCH --mem-per-cpu 1024
-#SBATCH --time 24:00:00
+#SBATCH --time 72:00:00
 #SBATCH --output out.txt
 #SBATCH --error err.txt
 #SBATCH --mail-type=END
 #SBATCH --mail-user=alexia.dormann@epfl.ch
 
-  ./odpd-fidis  sim1&
-  ./odpd-fidis  sim2&
-  ./odpd-fidis  sim3&
+  ./odpd-fidis  free001&
+  ./odpd-fidis  free002&
+
 wait
